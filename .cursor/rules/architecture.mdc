@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Prioritize fast MVP delivery, modularity, and progressive enhancement.
+- Use mocks early, replace with real services modularly, avoid risky refactors.
+
+The technology stack will include:
+- Frontend: HTML5, TailwindCSS, Vite, Vanilla JS (with TypeScript), Zod, hosted on Railway.app, source on GitHub.
+- Backend: Supabase (PostgreSQL, Auth, RLS), Next.js API Routes.
+- Future Layers: LLM orchestration, realtime collab, backup/export.
+
+The development strategy is:
+- Mocks First: Early features (dashboard, chatbot, etc.) use fake data/services.
+- Progressive Enhancement: All pages must work without JS; JS is layered on for interactivity.
+- Incremental Replacements: Replace mocks with real services in a modular way.
+- Boring Tools: Use proven, simple tools unless a strong case for alternatives.

@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+The directory structure should follow:
+/project-root
+├── /public
+│   └── favicon.ico
+├── /src
+│   ├── /assets
+│   │   ├── /images
+│   │   ├── /scripts
+│   │   │   ├── main.ts (core frontend logic)
+│   │   │   ├── auth.ts (supabase auth handlers)
+│   │   │   └── apiClients.ts (OpenAI, Stripe, SendGrid integrations)
+│   │   ├── /styles
+│   │   │   └── main.css (Tailwind styles)
+│   ├── /components
+│   │   └── navbar.html (partial HTML components)
+│   ├── /pages
+│   │   ├── index.html
+│   │   ├── signup.html
+│   │   ├── login.html
+│   │   └── dashboard.html
+│   ├── /schemas
+│   │   └── userSchema.ts (Zod validation)
+│   └── tailwind.config.js
+├── .env
+├── package.json
+├── vite.config.js
+└── postcss.config.js
