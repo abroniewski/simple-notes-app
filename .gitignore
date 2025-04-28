@@ -1,20 +1,18 @@
-# Dependencies
+# Node modules and build output
 node_modules/
-.pnp
-.pnp.js
-
-# Production build
+.next/
 dist/
 build/
 
-# Development
+# Environment variables
 .env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Debug logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -38,4 +36,28 @@ ehthumbs.db
 Thumbs.db
 
 # TypeScript
-*.tsbuildinfo 
+*.tsbuildinfo
+
+# Cursor MCP config
+.cursor/mcp.json
+
+# Misc
+*.log
+*.pid
+*.seed
+*.tgz
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+yarn.lock
+
+# Tailwind CSS JIT cache
+.tailwindcss*
+
+# Coverage directory used by tools like istanbul
+coverage/ 
