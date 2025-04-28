@@ -27,10 +27,16 @@
     "allowJs": true,
     "incremental": true,
     "esModuleInterop": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "public/src/**/*"
+    "public/src/**/*",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
